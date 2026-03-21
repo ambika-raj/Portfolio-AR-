@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambika Raj — Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">×</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="progress"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">AR.</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <!-- <li><a href="assets/Ambika Raj CV.pdf" download class="nav-cv">Resume ↗</a></li> -->
+    <li><a href="assets/Ambika Raj CV.pdf" target="_blank" class="nav-cv">Resume ↗</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-inner">
+
+    <!-- LEFT — content -->
+    <div class="hero-content">
+      <div class="hero-badge">Available for Opportunities</div>
+      <h1 class="hero-name">
+        Hi, I'm<br>
+        <span id="scramble-text">Ambika Raj</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">— </span>
+        <span id="role-text"></span>
+        <span class="role-cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        I'm a <strong>Full Stack Developer</strong> with a focus on
+        <strong>Cloud Computing</strong>, currently pursuing B.Tech CSE at
+        Lovely Professional University. I love turning my own ideas into
+        real, working products — from pixel-perfect frontends to scalable
+        cloud backends. A continuous learner by nature, I'm driven by the
+        challenge of building things that are both powerful and elegant.
+        My goal is to contribute to a <strong>product company</strong> where
+        I can work on meaningful cloud-native web experiences.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Let's Connect</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/ambika-raj" target="_blank" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/ambika-raj" target="_blank" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:ambikaraj182@gmail.com" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT — glowing circle photo -->
+    <div class="hero-photo">
+      <div class="hero-circle-wrap">
+        <div class="circle-inner-ring"></div>
+        <div class="hero-circle">
+          <img src="assets/profile.jpeg" alt="Ambika Raj"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="hero-circle-initials" style="display:none">AR</span>
+        </div>
+        <!-- Only keep Open to Work badge -->
+        <div class="blob-badge blob-badge-1">
+          <span class="blob-badge-dot" style="background:#22C55E"></span>
+          Open to Work
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <div class="section-label">Who I Am</div>
+    <h2 class="section-title">About Me</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal reveal-delay-1">
+      <p>I'm <strong>Ambika Raj</strong> — someone who didn't just learn to code, but fell in love with building. What started as curiosity about how websites work turned into a deep passion for creating full-stack experiences that actually matter.</p>
+      <p>I'm currently in my 3rd year of B.Tech CSE <strong>(Cloud Computing)</strong> at <strong>Lovely Professional University</strong>, where I've been sharpening both my technical skills and my ability to think like an engineer.</p>
+      <p>Outside of code, I'm a continuous learner — always exploring new tools, reading about system design, and pushing myself to build things that challenge me. I don't just want to write code. I want to <strong>build products.</strong></p>
+      <div class="about-stats">
+        <div class="stat-card reveal reveal-delay-2"><div class="stat-number">3+</div><div class="stat-label">Projects Built</div></div>
+        <div class="stat-card reveal reveal-delay-3"><div class="stat-number">10+</div><div class="stat-label">Technologies</div></div>
+        <div class="stat-card reveal reveal-delay-2"><div class="stat-number">3+</div><div class="stat-label">Certifications</div></div>
+        <div class="stat-card reveal reveal-delay-3"><div class="stat-number">∞</div><div class="stat-label">Curiosity</div></div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+          <span class="terminal-title">ambika@portfolio:~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal">
+    <div class="section-label">What I Work With</div>
+    <h2 class="section-title">Skills & Technologies</h2>
+  </div>
+  <div class="skills-categories">
+
+    <div class="skill-cat-row reveal reveal-delay-1">
+      <div class="skill-cat-heading">— Frontend</div>
+      <div class="skill-tags-row">
+        <span class="skill-tag tag-frontend" data-cat="Frontend"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#E34F26"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg></span>HTML5</span>
+        <span class="skill-tag tag-frontend" data-cat="Frontend"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#1572B6"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.413z"/></svg></span>CSS3</span>
+        <span class="skill-tag tag-frontend" data-cat="Frontend"><span class="skill-logo"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#F7DF1E" rx="2"/><path fill="#000" d="M6.347 15.414c.333.612.777 1.06 1.555 1.06.653 0 1.07-.326 1.07-.776 0-.539-.428-.73-1.147-1.044l-.393-.169c-1.137-.484-1.893-1.09-1.893-2.37 0-1.18.899-2.079 2.304-2.079.999 0 1.717.347 2.234 1.258l-1.223.785c-.27-.484-.561-.674-.999-.674-.454 0-.741.287-.741.674 0 .472.287.663 1.05.954l.393.169c1.34.573 2.1 1.16 2.1 2.473 0 1.417-1.113 2.192-2.607 2.192-1.462 0-2.406-.696-2.867-1.607l1.164-.846zm7.127.057c.24.428.46.789 1 .789.51 0 .832-.2.832-.976V9.88h1.519v5.43c0 1.607-.942 2.337-2.317 2.337-1.243 0-1.963-.644-2.328-1.42l1.294-.756z"/></svg></span>JavaScript</span>
+        <span class="skill-tag tag-frontend" data-cat="Frontend"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#61DAFB"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.167 2.167 0 0 0-1.096-.278zm-.005 1.09c.646 0 .828.32.972.61.415.836.405 2.682-.232 4.832a53.35 53.35 0 0 0-2.012-.41C14.97 6.78 14.14 5.8 13.277 5.004c1.168-.924 2.27-1.6 3.596-1.6zm-9.22.006c1.324 0 2.426.673 3.595 1.597C10.335 5.8 9.505 6.782 8.87 7.836a53.45 53.45 0 0 0-2.013.41c-.638-2.15-.647-3.994-.232-4.83.144-.29.327-.607.972-.607zm4.61 2.55c.528.499 1.058 1.09 1.574 1.76a41.52 41.52 0 0 0-3.148 0c.516-.67 1.046-1.261 1.574-1.76zm-6.72 4.03c.44-.08.906-.153 1.385-.215-.24.63-.44 1.278-.596 1.925-.15.638-.264 1.266-.338 1.876-.547-.293-1.05-.607-1.496-.934C2.567 12.79 1.5 12.375 1.5 12.004c0-.37 1.067-.787 2.043-1.014zm13.44 0c.976.227 2.043.644 2.043 1.014 0 .372-1.067.787-2.043 1.014a18.12 18.12 0 0 0-1.496.934c-.074-.61-.188-1.238-.338-1.876a28.88 28.88 0 0 0-.596-1.925c.48.062.945.134 1.385.214l.045.008v.628zm-9.82 1.77a41.84 41.84 0 0 1 1.574 0c-.516.67-1.046 1.262-1.574 1.761-.528-.499-1.058-1.091-1.574-1.76zm6.73 0a41.84 41.84 0 0 1 1.574 0 41.84 41.84 0 0 1-1.574 1.76 41.84 41.84 0 0 1-1.574-1.76z"/></svg></span>React.js</span>
+      </div>
+    </div>
+
+    <div class="skill-cat-row reveal reveal-delay-2">
+      <div class="skill-cat-heading">— Backend</div>
+      <div class="skill-tags-row">
+        <span class="skill-tag tag-backend" data-cat="Backend"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#339933"><path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.604.066-.037.152-.023.218.017l2.256 1.339c.082.045.197.045.272 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.19-.137-.242l-8.791-5.072c-.081-.047-.189-.047-.271 0L3.073 6.68c-.084.051-.139.146-.139.241v10.15c0 .097.055.189.137.235l2.409 1.392c1.307.654 2.108-.116 2.108-.891V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.111.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675c-.57-.329-.922-.943-.922-1.604V6.921c0-.661.352-1.275.922-1.603l8.795-5.082c.557-.315 1.296-.315 1.848 0l8.794 5.082c.57.329.924.943.924 1.603v10.15c0 .661-.354 1.275-.924 1.604l-8.794 5.076c-.282.164-.6.247-.925.247z"/></svg></span>Node.js</span>
+        <span class="skill-tag tag-backend" data-cat="Backend"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#fff" style="background:#000;border-radius:3px"><path d="M24 18.588a1.529 1.529 0 0 1-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.411zM.002 7.867C.255 6.1 1.33 5.62 2.1 6.45L8.3 14.5 2.123 21.5C1.33 22.37.27 21.85 0 21.03V7.867z"/></svg></span>Express.js</span>
+        <span class="skill-tag tag-backend" data-cat="Backend"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#47A248"><path d="M17.193 9.555c-1.264-5.58-4.252-7.507-4.573-8.18-.29-.067-.538 1.044-2.677 2.187-3.217 1.656-6.98 8.693-6.396 14.613.128-.53.334-1.042.618-1.506a.25.25 0 0 1 .368-.07c1.43 1.07 2.955 1.69 4.557 1.844 1.592.153 3.21-.143 4.8-.73.285-.106.577-.087.817.071a5.432 5.432 0 0 1 .72.576c.238.782.157 1.63-.133 2.4-.285.762-.73 1.447-1.288 2.007-.558.557-1.222.985-1.942 1.236a7.91 7.91 0 0 1-1.104.054c-2.204 0-4.227-.889-5.686-2.333a8.015 8.015 0 0 1-2.314-5.672C3.056 7.4 7.028 2.15 12.21.146c2.7-1.04 4.9-.27 5.79.9.885 1.17.803 2.866-.807 8.51z"/></svg></span>MongoDB</span>
+        <span class="skill-tag tag-backend" data-cat="Backend"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#4479A1"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10" fill="#6CA8D4"/><path d="M2 12h20M2 8h20M2 16h20" stroke="#fff" stroke-width="0.5" fill="none"/></svg></span>SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-cat-row reveal reveal-delay-3">
+      <div class="skill-cat-heading">— Cloud & Tools</div>
+      <div class="skill-tags-row">
+        <span class="skill-tag tag-cloud" data-cat="Cloud"><span class="skill-logo"><svg viewBox="0 0 24 24"><path d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c-3.875.639-3.383 5.741.369 5.741h1.089c-.17-.8-.17-1.271.066-2.086a7.077 7.077 0 0 1 7.71-5.148 7.08 7.08 0 0 1 6.325 7.032v.252h2.355c2.78 0 3.842-3.706 1.364-5.378A9.336 9.336 0 0 0 12.19 2.38z" fill="#4285F4"/><path d="M6.54 12.64c-1.29 0-2.34 1.05-2.34 2.34v4.68c0 1.29 1.05 2.34 2.34 2.34h10.92c1.29 0 2.34-1.05 2.34-2.34v-4.68c0-1.29-1.05-2.34-2.34-2.34H6.54z" fill="#0F9D58"/></svg></span>Google Cloud</span>
+        <span class="skill-tag tag-cloud" data-cat="Cloud"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#F05032"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg></span>Git</span>
+        <span class="skill-tag tag-cloud" data-cat="Cloud"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#FCC624"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>GitHub</span>
+        <span class="skill-tag tag-cloud" data-cat="Cloud"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#FCC624"><path d="M11.5 0L0 6.5v11L11.5 24 23 17.5v-11zm0 2.3l9.3 5.2v9L11.5 22 2.2 16.5v-9z"/></svg></span>Linux</span>
+      </div>
+    </div>
+
+    <div class="skill-cat-row reveal reveal-delay-4">
+      <div class="skill-cat-heading">— Languages</div>
+      <div class="skill-tags-row">
+        <span class="skill-tag tag-lang" data-cat="Language"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#007396"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.19 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.631"/></svg></span>Java</span>
+        <span class="skill-tag tag-lang" data-cat="Language"><span class="skill-logo"><svg viewBox="0 0 24 24" fill="#3776AB"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.25-.01h.23l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 11.83h-.28l-.32.03-.32.06-.29.09-.23.12-.19.15-.14.19-.1.24-.06.29-.01.32.05.36.13.39.23.38.3.35.33.28.33.19.3.1.24.04.18.01.14-.01.1-.02.07-.03.03-.04.01-.04V12.5l-.01-.36zm14.24 1.66l-5.3-2.61v1.97l3.67 1.81-3.67 1.81v1.97l5.3-2.61v-2.34zm-18.49 0v2.34l5.3 2.61v-1.97L3.89 16.1l3.81-1.88v-1.97l-5.3 2.61z"/></svg></span>Python</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="reveal">
+    <div class="section-label">What I've Built</div>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card reveal reveal-delay-1">
+      <div class="card-inner">
+        <div class="card-front">
+          <span class="featured-badge">Featured</span>
+          <div class="card-scan-line"></div>
+          <div class="card-number">01 — MERN Stack</div>
+          <h3 class="card-title">DevLog</h3>
+          <p class="card-desc">A full-stack developer blogging platform where tech enthusiasts can write, publish, and discover engineering articles. Features rich-text editing, JWT auth, and profile management.</p>
+          <div class="card-category">Full Stack · MERN</div>
+          <div class="card-flip-hint">Hover to see details →</div>
+        </div>
+        <div class="card-back">
+          <img class="card-back-img" src="assets/Screenshot 2026-03-16 130633.png" alt="DevLog Preview"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="card-back-img-placeholder" style="display:none">
+            <div class="placeholder-icon">🖥️</div>
+            <div class="placeholder-text">Add devlog.png to assets/images/projects/</div>
+          </div>
+          <div class="card-back-info">
+            <div class="card-back-title">Tech Stack</div>
+            <div class="card-tech-list">
+              <span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span><span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">JWT Auth</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ambika-raj/DevLog.git" target="_blank" class="card-link">GitHub ↗</a>
+              <a href="https://ambi-devlog.netlify.app" target="_blank" class="card-link card-link-outline">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-scan-line"></div>
+          <div class="card-number">02 — Frontend</div>
+          <h3 class="card-title">YouTube Clone</h3>
+          <p class="card-desc">A pixel-accurate YouTube frontend clone with dynamic video thumbnails, responsive grid layout, sidebar navigation, and live YouTube Data API integration.</p>
+          <div class="card-category">Frontend · API Integration</div>
+          <div class="card-flip-hint">Hover to see details →</div>
+        </div>
+        <div class="card-back">
+          <img class="card-back-img" src="assets/Screenshot 2026-03-21 185748.png" alt="DevLog Preview"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="card-back-img-placeholder" style="display:none">
+            <div class="placeholder-icon">🎬</div>
+            <div class="placeholder-text">Add youtube-clone.png to assets/images/projects/</div>
+          </div>
+          <div class="card-back-info">
+            <div class="card-back-title">Tech Stack</div>
+            <div class="card-tech-list">
+              <span class="tech-tag">React.js</span><span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Express.js</span><span class="tech-tag">YouTube API</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ambika-raj/youtube-clone.git" target="_blank" class="card-link">GitHub ↗</a>
+              <a href="https://ambi-youtube-clone.vercel.app/" target="_blank" class="card-link card-link-outline">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-3">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-scan-line"></div>
+          <div class="card-number">03 — Portfolio</div>
+          <h3 class="card-title">Portfolio Website</h3>
+          <p class="card-desc">This very portfolio — handcrafted with custom cursor, text effect, terminal about section, skill hover logos, flip cards with screenshots, and cert lightbox. Zero frameworks.</p>
+          <div class="card-category">Vanilla JS · Creative Dev</div>
+          <div class="card-flip-hint">Hover to see details →</div>
+        </div>
+        <div class="card-back">
+          <img class="card-back-img" src="assets/Screenshot 2026-03-21 185824.png" alt="DevLog Preview"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="card-back-img-placeholder" style="display:none">
+            <div class="placeholder-icon">🌐</div>
+            <div class="placeholder-text">Add portfolio.png to assets/images/projects/</div>
+          </div>
+          <div class="card-back-info">
+            <div class="card-back-title">Tech Stack</div>
+            <div class="card-tech-list">
+              <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span><span class="tech-tag">Canvas API</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ambika-raj/DevLog.git" target="_blank" class="card-link">GitHub ↗</a>
+              <a href="#" target="_blank" class="card-link card-link-outline">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="reveal">
+    <div class="section-label">Credentials</div>
+    <h2 class="section-title">Certifications</h2>
+  </div>
+  <div class="cert-grid">
+
+    <div class="cert-card reveal reveal-delay-1" onclick="openLightbox('assets/google-cloud-computing-foundations-certificate.png','Google Cloud Computing Foundations')">
+      <div class="cert-img-wrap">
+        <img class="cert-img" src="assets/google-cloud-computing-foundations-certificate.png" alt="Google Cloud Certificate"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cert-img-placeholder" style="display:none">
+          <span class="cert-placeholder-icon">☁️</span>
+          <span class="cert-placeholder-text">Add google-cloud.png</span>
+        </div>
+        <div class="cert-shimmer"></div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-issuer-badge cert-google">Google Cloud</div>
+        <div class="cert-name">Google Cloud Computing Foundations Certificate</div>
+        <div class="cert-date">Jun 2025 – Jul 2025</div>
+        <a href="https://www.credly.com/badges/61576e02-ef12-48e9-a808-dd28a9aca580/public_url" target="_blank" class="cert-verify" onclick="event.stopPropagation()">Verify ↗</a>
+        <div class="cert-click-hint">Click image to zoom</div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-2" onclick="openLightbox('assets/Screenshot 2026-03-21 190146.png','Basics of DSA — LPU')">
+      <div class="cert-img-wrap">
+        <img class="cert-img" src="assets/Screenshot 2026-03-21 190146.png" alt="LPU DSA Certificate"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cert-img-placeholder" style="display:none">
+          <span class="cert-placeholder-icon">📊</span>
+          <span class="cert-placeholder-text">Add lpu-dsa.png</span>
+        </div>
+        <div class="cert-shimmer"></div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-issuer-badge cert-lpu">LPU</div>
+        <div class="cert-name">Basics of Data Structures and Algorithms</div>
+        <div class="cert-date">Jun 2025 – Jul 2025</div>
+        <a href="#" target="_blank" class="cert-verify" onclick="event.stopPropagation()">Verify ↗</a>
+        <div class="cert-click-hint">Click image to zoom</div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-3" onclick="openLightbox('assets/Screenshot 2026-03-21 195935.png','Coursera Certificate')">
+      <div class="cert-img-wrap">
+        <img class="cert-img" src="assets/Screenshot 2026-03-21 195935.png" alt="Coursera Certificate"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cert-img-placeholder" style="display:none">
+          <span class="cert-placeholder-icon">💼</span>
+          <span class="cert-placeholder-text">Add coursera.png</span>
+        </div>
+        <div class="cert-shimmer"></div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-issuer-badge cert-coursera">Coursera</div>
+        <div class="cert-name">The Bits and Bytes of Computer Networking</div>
+        <div class="cert-date">2024</div>
+        <a href="https://www.coursera.org/account/accomplishments/verify/R6LOOX7KKYER" target="_blank" class="cert-verify" onclick="event.stopPropagation()">Verify ↗</a>
+        <div class="cert-click-hint">Click image to zoom</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="reveal">
+    <div class="section-label">Recognition</div>
+    <h2 class="section-title">Achievements</h2>
+  </div>
+  <div class="achievements-grid">
+
+    <div class="achievement-card reveal reveal-delay-1">
+      <div class="achievement-icon ach-hrank">🏅</div>
+      <div class="achievement-info">
+        <div class="achievement-badge badge-hrank">HackerRank</div>
+        <div class="achievement-name">Java - 30 Days of Code</div>
+        <div class="achievement-issuer">HackerRank</div>
+        <div class="achievement-date">2025</div>
+        <a href="https://www.hackerrank.com/profile/ambikaraj219" target="_blank" class="achievement-verify">View Badge ↗</a>
+      </div>
+    </div>
+
+    <div class="achievement-card reveal reveal-delay-2">
+      <div class="achievement-icon ach-hrank">🏅</div>
+      <div class="achievement-info">
+        <div class="achievement-badge badge-hrank">HackerRank</div>
+        <div class="achievement-name">JavaScript (Basic) Skill Certification</div>
+        <div class="achievement-issuer">HackerRank</div>
+        <div class="achievement-date">2025</div>
+        <a href="https://www.hackerrank.com/certificates/eec0f822eaf9" target="_blank" class="achievement-verify">View Badge ↗</a>
+      </div>
+    </div>
+
+    <div class="achievement-card reveal reveal-delay-3">
+      <div class="achievement-icon ach-aws">☁️</div>
+      <div class="achievement-info">
+        <div class="achievement-badge badge-aws">AWS</div>
+        <div class="achievement-name">AWS Student Community Day Participant</div>
+        <div class="achievement-issuer">Amazon Web Services</div>
+        <div class="achievement-date">2025</div>
+        <a href="https://www.credly.com/badges/17b06a1d-5139-43c5-9b84-ef0ce1b432e9/public_url" target="_blank" class="achievement-verify">View Badge ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <div class="section-label">Let's Talk</div>
+    <h2 class="section-title">Get In Touch</h2>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info reveal reveal-delay-1">
+      <p>Open to <strong style="color:var(--text)">internship opportunities</strong>, <strong style="color:var(--text)">freelance projects</strong>, and interesting collaborations. My inbox is always open!</p>
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <a href="mailto:ambikaraj182@gmail.com">ambikaraj182@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <span>+91 6209055043</span>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></div>
+        <a href="https://github.com/ambika-raj" target="_blank">github.com/ambika-raj</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+        <a href="https://linkedin.com/in/ambika-raj" target="_blank">linkedin.com/in/ambika-raj</a>
+      </div>
+      <div style="margin-top:32px;">
+        <a href="assets/Ambika Raj CV.pdf" download class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume (PDF)
+        </a>
+      </div>
+    </div>
+    <div class="contact-form reveal reveal-delay-2">
+      <input type="text" class="form-input" placeholder="Your Name" id="form-name">
+      <input type="email" class="form-input" placeholder="Your Email" id="form-email">
+      <input type="text" class="form-input" placeholder="Subject" id="form-subject">
+      <textarea class="form-input" placeholder="Your Message..." id="form-message"></textarea>
+      <button class="btn-primary" id="form-btn" style="width:100%;cursor:none;border:none;font-size:1rem;justify-content:center;">Send Message →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">Designed & Built by <span>Ambika Raj</span> — 2025</div>
+  <div style="display:flex;gap:16px;align-items:center;">
+    <span style="font-size:0.78rem;color:var(--muted);">Made with ☕ & JavaScript</span>
+    <a href="#hero" class="back-top">↑</a>
+  </div>
+</footer>
+
+<script>
+/* ══════════════════════════════════════
+   CURSOR
+══════════════════════════════════════ */
+const cursorDot  = document.getElementById('cursor');
+const cursorRing = document.getElementById('cursor-ring');
+const mouse = { x: -20, y: -20 };
+const ring  = { x: -20, y: -20 };
+
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+document.addEventListener('mousemove', e => {
+  mouse.x = e.clientX; mouse.y = e.clientY;
+  cursorDot.style.left = mouse.x + 'px';
+  cursorDot.style.top  = mouse.y + 'px';
+});
+(function animRing() {
+  ring.x = lerp(ring.x, mouse.x, 0.09);
+  ring.y = lerp(ring.y, mouse.y, 0.09);
+  cursorRing.style.left = ring.x + 'px';
+  cursorRing.style.top  = ring.y + 'px';
+  requestAnimationFrame(animRing);
+})();
+
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursorDot.style.width = '18px'; cursorDot.style.height = '18px';
+    cursorDot.style.background = 'var(--blue)';
+    cursorRing.style.width = '58px'; cursorRing.style.height = '58px';
+    cursorRing.style.opacity = '0.25'; cursorRing.style.borderColor = 'var(--orange)';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursorDot.style.width = '10px'; cursorDot.style.height = '10px';
+    cursorDot.style.background = 'var(--orange)';
+    cursorRing.style.width = '36px'; cursorRing.style.height = '36px';
+    cursorRing.style.opacity = '0.5'; cursorRing.style.borderColor = 'var(--blue)';
+  });
+});
+document.addEventListener('mousedown', () => {
+  cursorDot.style.transform = 'translate(-50%,-50%) scale(0.6)';
+});
+document.addEventListener('mouseup', () => {
+  cursorDot.style.transform = 'translate(-50%,-50%) scale(1)';
+});
+document.addEventListener('mouseleave', () => {
+  cursorDot.style.opacity = '0'; cursorRing.style.opacity = '0';
+});
+document.addEventListener('mouseenter', () => {
+  cursorDot.style.opacity = '1'; cursorRing.style.opacity = '0.5';
+});
+
+/* ══════════════════════════════════════
+   SCROLL PROGRESS + NAV
+══════════════════════════════════════ */
+const prog = document.getElementById('progress');
+const nav  = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  prog.style.width = pct + '%';
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  // active nav link
+  let cur = '';
+  document.querySelectorAll('section[id]').forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--text)' : '';
+  });
+});
+
+/* ══════════════════════════════════════
+   NAME — clean gradient, no effect
+   The CSS animation already handles the
+   fadeUp entrance beautifully
+══════════════════════════════════════ */
+/* Name is already set in HTML — nothing needed */
+
+/* ══════════════════════════════════════
+   ROLE TYPER
+══════════════════════════════════════ */
+const ROLES = ['Full Stack Developer','Cloud Enthusiast','MERN Stack Builder','Problem Solver','UI/UX Thinker'];
+let ri = 0, ci = 0, del = false;
+const roleEl = document.getElementById('role-text');
+async function typeRole() {
+  const word = ROLES[ri];
+  if (!del) {
+    roleEl.textContent = word.slice(0, ++ci);
+    if (ci === word.length) { del = true; await wait(1800); }
+    else await wait(75);
+  } else {
+    roleEl.textContent = word.slice(0, --ci);
+    if (ci === 0) { del = false; ri = (ri + 1) % ROLES.length; await wait(300); }
+    else await wait(35);
+  }
+  typeRole();
+}
+function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+wait(1400).then(typeRole);
+
+/* ══════════════════════════════════════
+   TERMINAL ABOUT
+══════════════════════════════════════ */
+const termLines = [
+  { type: 'cmd', text: 'whoami', delay: 600 },
+  { type: 'out', text: '<span class="hl-blue">ambika_raj</span> — Full Stack Developer', delay: 200 },
+  { type: 'empty', delay: 100 },
+  { type: 'cmd', text: 'cat education.txt', delay: 500 },
+  { type: 'out', text: 'B.Tech CSE <span class="hl-orange">(Cloud Computing)</span>', delay: 150 },
+  { type: 'out', text: 'Lovely Professional University · 3rd Year', delay: 100 },
+  { type: 'empty', delay: 100 },
+  { type: 'cmd', text: 'ls skills/', delay: 500 },
+  { type: 'out', text: '<span class="hl-green">React</span>  <span class="hl-green">Node.js</span>  <span class="hl-green">MongoDB</span>  <span class="hl-blue">Python</span>', delay: 150 },
+  { type: 'out', text: '<span class="hl-blue">Java</span>  <span class="hl-orange">GCP</span>  <span class="hl-orange">Linux</span>  <span class="hl-purple">SQL</span>', delay: 100 },
+  { type: 'empty', delay: 100 },
+  { type: 'cmd', text: 'cat status.txt', delay: 500 },
+  { type: 'out', text: '🟢 Open to <span class="hl-green">internships</span> & opportunities', delay: 150 },
+];
+const termBody = document.getElementById('terminal-body');
+async function runTerminal() {
+  await wait(800);
+  for (const l of termLines) {
+    await wait(l.delay);
+    const div = document.createElement('div');
+    div.classList.add('terminal-line');
+    if (l.type === 'cmd') {
+      div.innerHTML = `<span class="terminal-prompt">$</span><span class="terminal-cmd" id="tc"></span>`;
+      termBody.appendChild(div);
+      const t = div.querySelector('#tc');
+      for (const ch of l.text) { t.textContent += ch; await wait(55); }
+      await wait(200);
+    } else if (l.type === 'out') {
+      div.innerHTML = `<span class="terminal-prompt" style="color:var(--dim)">›</span><span class="terminal-output">${l.text}</span>`;
+      termBody.appendChild(div);
+    } else {
+      div.style.height = '0.4rem';
+      termBody.appendChild(div);
+    }
+    termBody.scrollTop = termBody.scrollHeight;
+  }
+  const cur = document.createElement('div');
+  cur.classList.add('terminal-line');
+  cur.innerHTML = `<span class="terminal-prompt">$</span><span class="terminal-cursor"></span>`;
+  termBody.appendChild(cur);
+}
+const aboutObs = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) { runTerminal(); aboutObs.disconnect(); }
+}, { threshold: 0.3 });
+aboutObs.observe(document.getElementById('about'));
+
+/* ══════════════════════════════════════
+   PROJECT CARD FLIP — SCAN LINE + MOBILE
+══════════════════════════════════════ */
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+document.querySelectorAll('.project-card').forEach(card => {
+  const scan = card.querySelector('.card-scan-line');
+  function triggerScan() {
+    if (!scan) return;
+    scan.classList.remove('scanning');
+    void scan.offsetHeight;
+    scan.classList.add('scanning');
+  }
+  if (!isTouchDevice) {
+    card.addEventListener('mouseenter', triggerScan);
+  } else {
+    card.setAttribute('tabindex', '0');
+    card.addEventListener('click', e => {
+      const flipped = card.classList.contains('flipped');
+      document.querySelectorAll('.project-card').forEach(c => c.classList.remove('flipped'));
+      if (!flipped) { card.classList.add('flipped'); triggerScan(); }
+      e.stopPropagation();
+    });
+  }
+});
+if (isTouchDevice) {
+  const s = document.createElement('style');
+  s.textContent = '.project-card.flipped .card-inner { transform: rotateY(180deg); }';
+  document.head.appendChild(s);
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.project-card').forEach(c => c.classList.remove('flipped'));
+  });
+}
+
+/* ══════════════════════════════════════
+   CERT LIGHTBOX
+══════════════════════════════════════ */
+const lightbox     = document.getElementById('lightbox');
+const lightboxImg  = document.getElementById('lightbox-img');
+const lightboxCap  = document.getElementById('lightbox-caption');
+const lightboxClose= document.getElementById('lightbox-close');
+
+function openLightbox(src, caption) {
+  lightboxImg.src = src;
+  lightboxCap.textContent = caption + ' — Click outside or × to close';
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+/* ══════════════════════════════════════
+   CONTACT FORM
+══════════════════════════════════════ */
+/* ══════════════════════════════════════
+   CONTACT FORM — EmailJS
+══════════════════════════════════════ */
+
+/* !! REPLACE THESE THREE VALUES !! */
+const EMAILJS_PUBLIC_KEY  = '1B_hyJfMA5Jij0jcw';
+const EMAILJS_SERVICE_ID  = 'service_q3rrfjj';
+const EMAILJS_TEMPLATE_ID = 'template_tasrmen';
+
+/* Initialize EmailJS */
+/* NEW */
+emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+const formBtn = document.getElementById('form-btn');
+
+formBtn.addEventListener('click', () => {
+  const name    = document.getElementById('form-name').value.trim();
+  const email   = document.getElementById('form-email').value.trim();
+  const subject = document.getElementById('form-subject').value.trim();
+  const message = document.getElementById('form-message').value.trim();
+
+  /* Validation */
+  if (!name || !email || !message) {
+    alert('Please fill in all required fields!');
+    return;
+  }
+
+  /* Show loading state on button */
+  formBtn.textContent = 'Sending...';
+  formBtn.disabled = true;
+  formBtn.style.opacity = '0.7';
+
+  /* Send via EmailJS */
+  emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+    from_name:  name,
+    from_email: email,
+    subject:    subject || 'New message from portfolio',
+    message:    message,
+    to_email:   'ambikaraj182@gmail.com',
+  })
+  .then(() => {
+    /* Success */
+    formBtn.textContent = '✓ Message Sent!';
+    formBtn.style.background = 'linear-gradient(135deg, #22C55E, #16A34A)';
+    formBtn.style.opacity = '1';
+
+    /* Reset form */
+    document.getElementById('form-name').value    = '';
+    document.getElementById('form-email').value   = '';
+    document.getElementById('form-subject').value = '';
+    document.getElementById('form-message').value = '';
+
+    /* Reset button after 3 seconds */
+    setTimeout(() => {
+      formBtn.textContent = 'Send Message →';
+      formBtn.style.background = '';
+      formBtn.disabled = false;
+    }, 3000);
+  })
+  .catch((error) => {
+    /* Error */
+    console.error('EmailJS error:', error);
+    formBtn.textContent = '✗ Failed — Try Again';
+    formBtn.style.background = 'linear-gradient(135deg, #EF4444, #DC2626)';
+    formBtn.style.opacity = '1';
+    formBtn.disabled = false;
+
+    setTimeout(() => {
+      formBtn.textContent = 'Send Message →';
+      formBtn.style.background = '';
+    }, 3000);
+  });
+});
+
+/* ══════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════ */
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '-60px' });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+/* Counter animation */
+function animateCounter(el, target, duration = 1500) {
+  const suffix = target.replace(/[0-9]/g, '');
+  const num    = parseInt(target);
+  if (isNaN(num)) return;
+  let start = null;
+  const step = ts => {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(num * eased) + suffix;
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = num + suffix;
+  };
+  requestAnimationFrame(step);
+}
+const counterObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounter(e.target, e.target.textContent.trim());
+      counterObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-number').forEach(el => counterObs.observe(el));
+</script>
+</body>
+</html>
